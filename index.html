@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 01</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(89, 58, 173);
+            color: white;
+            margin-top: 3%;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container" onmouseenter="entrar()">
+        <h1>Div</h1>
+    </div>
+    
+    <script>
+    var a = document.getElementById('container')
+    function entrar(){
+        a.style.background = 'rgb(255,192,203)'
+        a.innerHTML = "<h1>Entrou</h1>"
+    }
+    </script>
+</body>
+</html>

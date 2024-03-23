@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 02</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 200px;
+            margin-top: 3%;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px solid rgb(67, 106, 245);
+
+        }
+        #campoTexto{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" onmousemove="mover(event)">
+        <h1></h1>
+    </div>
+    <p id="campoTexto">
+
+    </p>
+    <script>
+    var a = document.getElementById('container')
+    function mover(e){
+        var posX = e.clientX
+        var posY = e.clientY
+        document.getElementById('campoTexto').innerText = ("Cordernadas: X: "+posX+" Y: "+posY)
+    }
+    </script>
+</body>
+</html>
